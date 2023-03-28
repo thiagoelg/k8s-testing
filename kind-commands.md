@@ -1,6 +1,6 @@
 Versions
 Kind: 0.17.0
-Kubernetes: 
+Kubernetes: 1.25.3
 
 # Create the cluster
 - `kind create cluster --config kind-cluster.yml`
