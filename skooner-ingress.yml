@@ -3,11 +3,15 @@ apiVersion: networking.k8s.io/v1
 metadata:
   name: skooner
   namespace: kube-system
+  annotations:
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+    nginx.ingress.kubernetes.io/ssl-redirect: 'false'
 spec:
   rules:
     - http:
         paths:
-          - path: /skooner
+          - path: /skooner(/|$)(.*)
             backend:
               service:
                 name: skooner
