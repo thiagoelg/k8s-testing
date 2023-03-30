@@ -19,4 +19,4 @@ Kubernetes: 1.25.3
 - `kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml`
 
 # Get token
-- `kubectl get secret default-secret -o jsonpath={.data.token} | base64 -d`
+- `kubectl get secret kie-sandbox-secret -o jsonpath={.data.token} | base64 -d`
