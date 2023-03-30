@@ -18,3 +18,5 @@ https://minikube.sigs.k8s.io/docs/handbook/config/
 
 https://stackoverflow.com/questions/69737827/how-to-force-ingress-nginx-to-redirect-to-http-only
 
+https://quarkus.io/guides/openapi-swaggerui
+
