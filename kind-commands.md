@@ -20,3 +20,6 @@ Kubernetes: 1.25.3
 
 # Get token
 - `kubectl get secret kie-sandbox-secret -o jsonpath={.data.token} | base64 -d`
+- On Windows:
+  - `$KubeToken = kubectl get secret default-secret -o jsonpath="{.data.token}"`
+  - `[System.Text.Encoding]::ASCII.GetString([System.Convert]::FromBase64String(${KubeToken}))`
